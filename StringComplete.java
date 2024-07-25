@@ -1,4 +1,20 @@
 public class StringComplete {
+    public static boolean isAnagram(String a,String b){
+        a = a.toLowerCase();
+        b = b.toLowerCase();
+        boolean result = true;
+        if(a.length()!=b.length()){
+            result=false;
+        }
+        else
+       { for (int i = 0; i < a.length(); i++) {
+            if(!b.contains(a.charAt(i)+"")){
+              result = false;
+            }
+            
+        }}
+        return result;
+    }
     public static void main(String[] args) {
         StringComplete scm = new StringComplete();
         System.out.println("we will understand about strings in java detail");
@@ -24,6 +40,12 @@ public class StringComplete {
         System.out.println(5/2);
         System.out.println("ALok".toLowerCase());
         nm2 = nm2.toLowerCase();
+
+        //checking availablity of a character in a string
+        // System.out.println("ALok".contains("A"));
+        String test = "name";
+       test= test.replace('n'+"", "");
+        System.out.println(test);
 
     }
     
