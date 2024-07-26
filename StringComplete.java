@@ -47,6 +47,21 @@ public class StringComplete {
        test= test.replace('n'+"", "");
         System.out.println(test);
 
+        //testing lexicographically sorting of Strings
+        // System.out.println("ALok" > "sinha");
+
+        //for comparing you can implement another way
+        System.out.println("lexiclaly"+"Zlok".compareTo("Anha"));
+        // System.out.println('a'>'b');
+        String input = "hello world";
+        String capitalized = capitalizeFirstLetter(input);
+        System.out.println(capitalized); // Output: Hello world
+        
     }
-    
+    public static String capitalizeFirstLetter(String str) {
+        if (str == null || str.isEmpty()) {
+            return str;
+        }
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
 }
