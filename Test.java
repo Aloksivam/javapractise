@@ -24,8 +24,7 @@ public class Test extends School {
         // School.display();
         Student s= new Student();
         System.out.println(s.marks);
-    }
-    
+    }  
 }
 class Student{
     public int marks;
