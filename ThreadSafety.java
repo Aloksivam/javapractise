@@ -3,7 +3,6 @@
 public class ThreadSafety{
     public static void main(String[] args) throws InterruptedException {
         int iterations = 10000;
-
         // StringBuilder example
         StringBuilder sb = new StringBuilder();
         Thread thread1 = new Thread(() -> {

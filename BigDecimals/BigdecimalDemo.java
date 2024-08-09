@@ -22,20 +22,20 @@ public class BigdecimalDemo {
         // double a=0.03;
         // double b=0.04;
         // double c=b-a;
-        // System.out.println(c);
+        // System.out.println(b-a);
         String a =  "0.03";
-        String b = "0.03";
-        String d = "-0.03";
+        String b = "0.04";
+        // String d = "-0.03";
         System.out.println(a.compareTo(b));
         BigDecimal bd1 = new BigDecimal(a);
-        BigDecimal bd2 = new BigDecimal(d);
-        System.out.println(bd2);
-        // BigDecimal bd1 = BigDecimal.valueOf(a);
-        // BigDecimal bd2 = BigDecimal.valueOf(b);
+        BigDecimal bd2 = new BigDecimal(b);
+        // System.out.println(bd2);
+        BigDecimal bd1 = BigDecimal.valueOf(a);
+        BigDecimal bd2 = BigDecimal.valueOf(b);
         System.out.println(bd2.subtract(bd1));
-        // System.out.println(bd1.compareTo(bd2));
-        System.out.println(bd2.compareTo(bd1));
-        new BigdecimalDemo().sorting(new int[]{1,2,3,4});
+        // // System.out.println(bd1.compareTo(bd2));
+        // System.out.println(bd2.compareTo(bd1));
+        // new BigdecimalDemo().sorting(new int[]{1,2,3,4});
 
 
     }
