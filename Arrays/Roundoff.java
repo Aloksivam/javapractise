@@ -7,14 +7,12 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 class Result {
-
     /*
      * Complete the 'gradingStudents' function below.
      *
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts INTEGER_ARRAY grades as parameter.
      */
-
     public static List<Integer> gradingStudents(List<Integer> grades) {
     // Write your code here
     List<Integer> li = new ArrayList<Integer>();
@@ -25,14 +23,11 @@ class Result {
         else{
                 li.add(i+(5-i%5));
         }
-        
+       
     }
     return li;
-
     }
-
 }
-
 public class Roundoff {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

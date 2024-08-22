@@ -114,7 +114,7 @@ public class StringComplete {
         // System.out.println("ALok" > "sinha");
 
         //for comparing you can implement another way
-        System.out.println("lexiclaly"+"Zlok".compareTo("Anha"));
+        // System.out.println("lexiclaly"+"Zlok".compareTo("Anha"));
         // System.out.println('a'>'b');
     //     String input = "hello world";
     //     String capitalized = capitalizeFirstLetter(input);
@@ -124,16 +124,24 @@ public class StringComplete {
     //   try{  
     //      str.getChars(6, 16, ch, 0);  
     //      System.out.println(ch[0]);  
-    //   }catch(Exception ex){System.out.println(ex);}  
-    System.out.println(Arrays.toString(CountVowelConst("alok s good")));
-    System.out.println(RevString("alok is"));
-    System.out.println(RemoveDuplicate("aalokisgood"));
-    }
-    public static String capitalizeFirstLetter(String str) {
-        if (str == null || str.isEmpty()) {
-            return str;
-        }
-        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    // //   }catch(Exception ex){System.out.println(ex);}  
+    // System.out.println(Arrays.toString(CountVowelConst("alok s good")));
+    // System.out.println(RevString("alok is"));
+    // System.out.println(RemoveDuplicate("aalokisgood"));
+    // }
+    // public static String capitalizeFirstLetter(String str) {
+    //     if (str == null || str.isEmpty()) {
+    //         return str;
+    //     }
+    //     return str.substring(0, 1).toUpperCase() + str.substring(1);
+    // String teste = "alok.is.good";
+    // teste = teste.replaceAll("[.]"," ");
+    // teste = teste.replace(".i", "#");
+    // System.out.println(teste);
+    String teste = "alok.is.good";
+    String[] temp = teste.split(".");
+    String res = String.join("#",temp);
+    System.out.println(res);
     }
 
 }
